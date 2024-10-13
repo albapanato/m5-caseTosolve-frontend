@@ -1,0 +1,53 @@
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Ysabeau SC', sans-serif;
+  background-image: url('/home-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+footer,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}

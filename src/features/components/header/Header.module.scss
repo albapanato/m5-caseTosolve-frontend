@@ -1,0 +1,32 @@
+.header {
+  width: 100vw;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ysabeau SC', sans-serif;
+
+  h1 {
+    padding-top: 0.5em;
+    font-size: 2.8rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,0 +1,34 @@
+.comeback {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  align-items: center;
+  padding: 5% 5%;
+  top: 0;
+  right: 0;
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.5s ease;
+
+  @media (max-width: 1000px) {
+    transition: all 1s ease-in-out;
+    padding: 7% 7%;
+  }
+
+  @media (max-width: 500px) {
+    transition: all 1s ease-in-out;
+    padding: 5% 5%;
+    transform: scale(0.7);
+  }
+
+  .logo:hover {
+    transition: 0.2s ease-in-out;
+    color: crimson;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}

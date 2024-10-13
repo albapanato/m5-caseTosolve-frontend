@@ -1,0 +1,118 @@
+.home {
+  display: flex;
+  align-items: center;
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
+  header {
+    @media (min-width: 1300px) {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      h1 {
+        padding: 0;
+
+        font-size: 7em;
+      }
+      h2 {
+        font-size: 3em;
+      }
+    }
+  }
+  .welcome {
+    font-family: 'Ysabeau SC', sans-serif;
+    padding: 5vw 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 1300px) {
+      padding: 0 5vw 0 0;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: underline;
+      font-size: 1.3rem;
+      color: crimson;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+
+    a:visited {
+      color: crimson;
+    }
+
+    button {
+      margin: 1em;
+      width: 10em;
+      height: 3.5em;
+      border: none;
+      border: 0.3em solid crimson;
+      background-color: crimson;
+      font-family: 'Ysabeau SC', sans-serif;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 600;
+    }
+
+    button:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: black;
+      border: 0.3em solid rgba(220, 20, 60, 0.5);
+      cursor: pointer;
+    }
+
+    .intro {
+      max-width: 50em;
+      font-size: 1.5rem;
+      padding: 0.2em;
+      font-weight: 600;
+      text-shadow: 0 0 5px black;
+    }
+
+    .films {
+      max-width: 50em;
+      font-size: 1.2rem;
+      padding: 0.6em;
+      margin: 1.5em 0.5em 0.5em 0.5em;
+      text-shadow: 0 0 5px black;
+    }
+
+    .register {
+      max-width: 50em;
+      font-size: 1.2rem;
+      padding: 0.6em;
+      margin: 0.5em;
+      text-shadow: 0 0 5px black;
+    }
+
+    img {
+      width: 100vw;
+      opacity: 0.5;
+    }
+
+    .reel {
+      font-size: 9em;
+      color: crimson;
+      padding: 2vw 0 0 0;
+      margin-bottom: -1vw;
+    }
+
+    .reel:visited {
+      color: white;
+    }
+
+    .reel:hover {
+      transition: 0.4s ease;
+      transform: scale(1.05);
+    }
+  }
+}

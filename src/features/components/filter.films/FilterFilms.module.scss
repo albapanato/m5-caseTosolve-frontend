@@ -1,0 +1,93 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 0 2em 2em 2em;
+
+  .filterControllers {
+    display: flex;
+    align-items: center;
+
+    label {
+      margin: 0 1em;
+      text-align: center;
+      @media (max-width: 600px) {
+        transition: all 0.4s ease-in-out;
+        font-size: 0.7rem;
+      }
+    }
+
+    select {
+      width: 7em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-family: 1rem;
+      height: 2.5em;
+      border: none;
+      font-family: 'Ysabeau SC', sans-serif;
+      option {
+        background-color: black;
+      }
+    }
+
+    select:focus > option:checked {
+      background: crimson;
+    }
+
+    select:hover {
+      transition: 0.2s ease-in-out;
+      color: crimson;
+      option {
+        color: white;
+      }
+    }
+
+    button {
+      height: 2.5em;
+      width: 7em;
+      font-family: 1rem;
+      border: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-family: 'Ysabeau SC', sans-serif;
+    }
+
+    button:hover {
+      transition: 0.2s ease-in-out;
+      color: crimson;
+    }
+  }
+  .controllers {
+    display: flex;
+    justify-content: center;
+    button {
+      border-radius: 50%;
+      width: 2.5em;
+      border: none;
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid white;
+      font-family: initial;
+      margin: 0 0.5em;
+    }
+    button:hover {
+      transition: 0.2s ease-in-out;
+      color: crimson;
+      border: 1px solid crimson;
+    }
+
+    .disabled:hover {
+      color: gray;
+      border: 1px solid white;
+    }
+    .disabled {
+      color: gray;
+      background-color: rgba(128, 128, 128, 0.5);
+      cursor: inherit;
+    }
+  }
+}
