@@ -10,7 +10,7 @@ export const registerUserAsync = createAsyncThunk(
   'users/register',
   async ({ repo, user }) => {
     return await repo.register(user);
-  },
+  }
 );
 export const loginUserAsync = createAsyncThunk(
   'users/login',
@@ -18,7 +18,7 @@ export const loginUserAsync = createAsyncThunk(
     const result = await repo.login(user);
     localStorage.setItem('userToken', result.token);
     return result;
-  },
+  }
 );
 const usersSlice = createSlice({
   name: 'users',

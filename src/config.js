@@ -1,1 +1,2 @@
-export const url = import.meta.env.VITE_BACK_URL;
+// src/config.js
+export const url = 'http://localhost:7777';

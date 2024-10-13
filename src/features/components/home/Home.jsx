@@ -8,7 +8,7 @@ export default function Home() {
       <div className={style.home}>
         <Header title="Films" subtitle="Feel your films"></Header>
         <div className={style.welcome}>
-          <p className={style.intro}>
+          <p data-cy="intro" className={style.intro}>
             Welcome to a unique place where you can express your feelings about
             the films you have watched, and share them with the whole world.
             Remember that the only condition to express your emotions is by

@@ -10,26 +10,27 @@ export const loadFilmsAsync = createAsyncThunk(
   async ({ repo, url, genre }) => {
     const response = await repo.getAll(url, genre);
     return response;
-  },
+  }
 );
 export const createFilmAsync = createAsyncThunk(
   'films/create',
   async ({ repo, film }) => {
+    console.log('verrrr', film);
     return await repo.create(film);
-  },
+  }
 );
 export const updateFilmAsync = createAsyncThunk(
   'films/update',
   async ({ repo, id, film }) => {
     return await repo.update(id, film);
-  },
+  }
 );
 export const deleteFilmAsync = createAsyncThunk(
   'films/delete',
   async ({ repo, id }) => {
     const response = await repo.delete(id);
     return response ? id : '';
-  },
+  }
 );
 const filmsSlice = createSlice({
   name: 'films',
@@ -50,7 +51,7 @@ const filmsSlice = createSlice({
     builder.addCase(updateFilmAsync.fulfilled, (state, { payload }) => ({
       ...state,
       films: state.films.map((item) =>
-        item.id === payload.id ? payload : item,
+        item.id === payload.id ? payload : item
       ),
     }));
     builder.addCase(deleteFilmAsync.fulfilled, (state, { payload }) => ({

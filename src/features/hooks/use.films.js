@@ -14,7 +14,7 @@ export function useFilms() {
   const dispatch = useDispatch();
   const repo = useMemo(() => new FilmRepository(url, token), [token]);
   const handleLoadFilms = useCallback(async () => {
-    await dispatch(loadFilmsAsync({ repo, url: url + 'film' }));
+    await dispatch(loadFilmsAsync({ repo, url: url + '/film' }));
   }, [repo, dispatch]);
   const handleCreateFilm = async (film) => {
     await dispatch(createFilmAsync({ repo, film }));

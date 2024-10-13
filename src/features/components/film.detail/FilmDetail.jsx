@@ -11,6 +11,7 @@ export default function FilmDetail() {
   const { films, handleDeleteFilm } = useFilms();
   const navigate = useNavigate();
   const item = films.find((item) => item.id === id);
+  console.log(item);
   const handleDelete = () => {
     handleDeleteFilm(item.id);
     Swal.fire({
@@ -31,7 +32,7 @@ export default function FilmDetail() {
       <Header title="Films" subtitle="Film Details"></Header>
       <ComeBack></ComeBack>
       <div className={detailStyle.details}>
-        <img src={item.poster.url} alt={item.title} />
+        <img src={item.poster?.url} alt={item.title} />
         <ul>
           <li className={detailStyle.title}>
             {item.title} <span>({item.genre})</span>

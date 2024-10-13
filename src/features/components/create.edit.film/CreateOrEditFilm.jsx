@@ -13,6 +13,7 @@ export default function CreateOrEditFilm() {
   useEffect(() => {
     if (id) {
       const existingFilm = films.find((film) => film.id === id);
+      console.log('existingFilm', existingFilm);
       if (!existingFilm) {
         handleLoadFilms();
       }
@@ -107,7 +108,7 @@ export default function CreateOrEditFilm() {
                 type="file"
                 id="poster"
                 name="poster"
-                accept=".png"
+                accept=".jpg"
                 required
               />
             </div>

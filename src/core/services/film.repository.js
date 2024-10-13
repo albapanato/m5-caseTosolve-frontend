@@ -2,12 +2,14 @@ export class FilmRepository {
   constructor(url, token) {
     this.url = url;
     this.token = token;
-    this.url += 'film';
+    this.url += '/film';
   }
   async getAll(url = this.url, genre) {
     let urlToSend = '';
-    !genre ? (urlToSend = url) : (urlToSend = `${url}film?${genre}`);
+    !genre ? (urlToSend = url) : (urlToSend = `${url}/film?${genre}`);
+    console.log('url', urlToSend);
     const response = await fetch(urlToSend);
+    console.log('response', response);
     if (!response.ok) {
       const message = `Error: ${response.status}. ${response.statusText}`;
       throw new Error(message);
@@ -16,7 +18,8 @@ export class FilmRepository {
     return answer;
   }
   async create(item) {
-    const response = await fetch(this.url + '/', {
+    console.log('CREATE ', item);
+    const response = await fetch(this.url + '', {
       method: 'POST',
       body: item,
       headers: { Authorization: 'Bearer ' + this.token },

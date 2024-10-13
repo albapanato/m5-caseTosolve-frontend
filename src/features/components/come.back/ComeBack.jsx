@@ -6,7 +6,7 @@ export function ComeBack() {
     <>
       <header className={style.comeback} id="header">
         <Link to={'/'} className={style.logo}>
-          <div>
+          <div data-testid="home-icon">
             <ImHome />
           </div>
         </Link>

@@ -3,15 +3,20 @@ export class UserRepository {
     this.url = url;
   }
   async register(item) {
-    const response = await fetch(this.url + 'user/register', {
-      method: 'POST',
-      body: JSON.stringify(item),
-      headers: { 'Content-Type': 'application/json' },
-    });
-    return response.json();
+    try {
+      const response = await fetch(this.url + '/user/register', {
+        method: 'POST',
+        body: JSON.stringify(item),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      console.log(this.url + '/user/register');
+      return response.json();
+    } catch (e) {
+      console.log('error: ', e);
+    }
   }
   async login(item) {
-    const response = await fetch(this.url + 'user/login', {
+    const response = await fetch(this.url + '/user/login', {
       method: 'PATCH',
       body: JSON.stringify(item),
       headers: { 'Content-Type': 'application/json' },
