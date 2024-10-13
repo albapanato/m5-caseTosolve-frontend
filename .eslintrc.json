@@ -3,19 +3,28 @@
     "browser": true,
     "es2021": true,
     "node": true,
-    "jest": true
+    "jest": true,
+    "cypress/globals": true //npm install eslint-plugin-cypress --save-dev
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
-    "prettier"
+    "prettier",
+    "plugin:cypress/recommended"
   ],
   "settings": {
     "react": {
       "version": "detect"
     }
+  },
+  "plugins": [
+    "react-refresh",
+    "cypress"
+  ],
+  "rules": {
+    "react/prop-types": "off"
   },
   "parserOptions": {
     "ecmaVersion": 12,
@@ -23,9 +32,5 @@
     "ecmaFeatures": {
       "jsx": true
     }
-  },
-  "plugins": ["react-refresh"],
-  "rules": {
-    "react/prop-types": "off"
   }
 }

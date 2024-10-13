@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Mad Max: Fury Road",
+    "yearOfRelease": 2015,
+    "synopsis": "In a post-apocalyptic wasteland, Max teams up with Furiosa to escape a tyrant and his army.",
+    "genre": "Action",
+    "poster": "MadMaxFuryRoad.jpg"
+  },
+  {
+    "title": "Inception",
+    "yearOfRelease": 2010,
+    "synopsis": "A thief who enters the dreams of others to steal secrets is given a chance to have his criminal history erased.",
+    "genre": "Sci-Fi",
+    "poster": "Inception.jpg"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "yearOfRelease": 1994,
+    "synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "genre": "Drama",
+    "poster": "The Shawshank Redemption.jpg"
+  },
+  {
+    "title": "Superbad",
+    "yearOfRelease": 2007,
+    "synopsis": "Two high school friends navigate their way through a night of partying and mischief.",
+    "genre": "Comedy",
+    "poster": "Superbad.jpg"
+  },
+  {
+    "title": "Inside Out",
+    "yearOfRelease": 2015,
+    "synopsis": "After a girl moves to a new city, her emotions conflict on how best to navigate a new life.",
+    "genre": "Animation",
+    "poster": "Inside Out.jpg"
+  },
+  {
+    "title": "Get Out",
+    "yearOfRelease": 2017,
+    "synopsis": "A young African-American man visits his white girlfriends family estate, uncovering a series of disturbing secrets.",
+    "genre": "Horror",
+    "poster": "Get Out.jpg"
+  }
+]
